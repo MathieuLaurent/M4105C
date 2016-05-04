@@ -38,7 +38,7 @@
 	
 	<input type="submit" name="envoyer" value="envoyer"/>
 </form>
-<div id="map"></div>
+<div id="map" style="border:5px solid black"></div>
 </body>
 </html>
 
@@ -108,10 +108,4 @@ if(navigator.geolocation) {
 } else {
     alert("Ce navigateur ne supporte pas la géolocalisation");
 }
-marker = new google.maps.Marker({
-    position: latlng,
-    map: map,
-    title:"Vous êtes ici",
-    icon: "fleche.png"
-});
 </script>
