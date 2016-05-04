@@ -6,7 +6,7 @@
  <title>M4105C : Un super module</title>
  <link rel="stylesheet" href="css/style.css">
  <link rel="icon" type="image/png" href="img/flavicon.jpg" />
- <script type="text/javascript" src="js/map.js"></script>
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
 
 
 </head>
@@ -38,9 +38,8 @@
 	
 	<input type="submit" name="envoyer" value="envoyer"/>
 </form>
-<div id="map" style="border:5px solid black"> TEST</div>
+<div id="map" style="border:5px solid black"></div>
 </body>
-</html>
 
 <script>
 // Position par défaut (Châtelet à Paris)
@@ -109,3 +108,4 @@ if(navigator.geolocation) {
     alert("Ce navigateur ne supporte pas la géolocalisation");
 }
 </script>
+</html>
