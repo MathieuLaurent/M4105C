@@ -2,3 +2,6 @@
 	zoom=1;
 	width: device-width;
 }
+html { height: 100% }
+body { height: 100%; margin: 0px; padding: 0px }
+#map_canvas { height: 100% ; width:100%;}
