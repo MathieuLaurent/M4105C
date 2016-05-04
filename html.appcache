@@ -4,9 +4,3 @@ CACHE MANIFEST
 /img/flavicon.jpeg
 /img/calais.jpeg
 /index.html
-
-NETWORK:
-login.asp
-
-FALLBACK:
-/html/ /offline.html
