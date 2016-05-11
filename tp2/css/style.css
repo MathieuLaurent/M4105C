@@ -25,6 +25,7 @@ ul, li{
 	-moz-transistion: ease-out 0.8s;
 	transition: ease-out 0.8s;
 	width: 100px;
+	text-align: center;
 }
 #styleEffect:hover{
 	-webkit-transition: ease-out 0.8s;
@@ -34,7 +35,7 @@ ul, li{
 	box-shadow: black 5px 5px 5px;
 	width:140px;
 	border-radius:10px;
-	text-align: center;
+	color:white;
 }
 a{
 	color:black;
