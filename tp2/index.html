@@ -13,15 +13,104 @@
 
 <header>
 <img src="img/logo-iut.jpg" id="logoLi">
+<span id="titre"> PROJET TP2 </span>
 	<ul class="menu">
-		<li id="styleEffect"><a href="#">Accueil</a></li>
-		<li id="styleEffect"><a href="#">Titre 1</a></li>
-		<li id="styleEffect"><a href="#">Contact</a></li>
 		<li id="marginLi"><input type="search" name="recherche" placeholder="rechercher"/></li>
+		<li id="styleEffect"><a href="#">Contact</a></li>
+		<li id="styleEffect"><a href="#">Titre 1</a></li>
+		<li id="styleEffect"><a href="#">Accueil</a></li>
 	</ul>
 </header>
 <body>
+<div class="ban">
+<img src="img/banniere.jpg" width="100%">
+</div>
+<h1> Site responsive design! </h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies turpis ornare, tincidunt nisi dictum, sollicitudin lectus. Aenean sed ornare ipsum. Donec mattis lacinia lorem quis congue. Donec auctor dui urna, id dictum magna maximus eleifend. Ut varius nunc vel interdum bibendum. Integer pulvinar urna non tortor bibendum, quis gravida nulla commodo. Etiam sit amet orci venenatis magna mattis molestie. In porta sed nisl sit amet ornare. Nam quis aliquam ipsum, vel lobortis magna. Nunc faucibus dictum augue, sit amet laoreet sem suscipit sit amet. Donec tempus, tortor eget laoreet volutpat, est arcu pulvinar sem, eu hendrerit erat tortor non eros. Cras euismod urna a enim aliquam, id ornare dolor pretium. Nunc libero mi, fermentum et neque et, tristique vestibulum risus.
+</p>
+<div>
+	<table>
+		<tr>
+			<th><img src="img/calais.jpg" id="resize"></th>
+			<th><img src="img/calais.jpg" id="resize"></th>
+			<th><img src="img/calais.jpg" id="resize"></th>
+			<th><img src="img/calais.jpg" id="resize"></th>
+		</tr>
+		<tr>
+			<td>Calais</td>
+			<td>Calais</td>
+			<td>Calais</td>
+			<td>Calais</td>
+		</tr>
+		<tr>
+			<td>Description</td>
+			<td>Description</td>
+			<td>Description</td>
+			<td>Description</td>
+		</tr>
+	</table>
+</div>
+<div>
+	<table id="tableFooter">
+		<tr>
+			<th> Titre 1 </th>
+			<th> Titre 2 </th>
+		</tr>
+		<tr>
+			<td width="50%"><input type="button" onclick="javascript:initialize()" name="geolocalisation" value="geolocalisation"/></td>
+			<td style="width:50%; border-left:1px solid black;">
+				<form>
+					<table id="tableForm">
+						<tr>
+							<td><input type="text" name="prenom" placeholder="Prenom"/></td>
+							<td><input type="text" name="nom" placeholder="Nom"/></td>
+						</tr>
+						<tr>
+							<td><input type="date" name="date" placeholder="Date de naissance"/></td>
+							<td><input type="text" name="ville" placeholder="Ville de naissance"/></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="email" name="mail" placeholder="Adresse email"/></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="url" name"photo" placeholder="photo"/></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="textarea" name="message" placeholder="message"/></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+	</table>
+</div>
 
 </body>
 
+<script>
+function initialize() {
+  map = new google.maps.Map(document.getElementById("map_canvas"), {
+        zoom: 19,
+        center: new google.maps.LatLng(48.858565, 2.347198),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });   
+} 
+ 
+if (navigator.geolocation)
+  var watchId = navigator.geolocation.watchPosition(successCallback,
+                            null,
+                            {enableHighAccuracy:true});
+else
+  alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");    
+ 
+function successCallback(position){
+  map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude), 
+    map: map
+  }); 
+}
+
+</script>
 </html>
