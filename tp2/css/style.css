@@ -4,5 +4,6 @@ header{
 	float: right;
 	border: 1px solid black;
 	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-image:linear-gradient(#EFEFEF,#9E9E9E);
 }
