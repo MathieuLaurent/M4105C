@@ -42,5 +42,8 @@ a{
 	text-decoration: none;
 }
 li{
-	line-height: 50px;
+	
+}
+#marginLi{
+	margin-left: 10px;
 }
