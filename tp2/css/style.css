@@ -11,3 +11,10 @@ header{
 ul, li{
 	display: inline-block;
 }
+.class ul{
+	float:right;
+}
+#logoLi{
+	width: 100px;
+	height: 40px;
+}
