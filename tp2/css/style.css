@@ -7,6 +7,7 @@ header{
 	background-image:linear-gradient(#EFEFEF,#9E9E9E);
 	list-style: none;
 	width:100%;
+	line-height: 50px;
 	height: 50px;
 }
 ul, li{
