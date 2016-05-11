@@ -26,19 +26,16 @@ ul, li{
 	margin-left: 5px;
 }
 #styleEffect{
-	-moz-transition: all 1s ease;
-	-webkit-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: ease-out 0.8s;
+	-moz-transistion: ease-out 0.8s;
+	transition: ease-out 0.8s;
 	width: 100px;
 	text-align: center;
 }
 #styleEffect:hover{
-	-moz-transform: scale(1) rotate(360deg) translate(10px);
-	-webkit-transform: scale(1) rotate(360deg) translate(10px);
-	-o-transform: scale(1) rotate(360deg) translate(10px);
-	transform: scale(1) rotate(360deg) translate(10px);
-	z-index: 1000;
+	-webkit-transition: ease-out 0.8s;
+	-moz-transistion: ease-out 0.8s;
+	transition: ease-out 0.8s;
 	background-color:#5F9EA0;
 	box-shadow: black 5px 5px 5px;
 	width:140px;
@@ -75,6 +72,4 @@ table{
 #tableForm input{
 	width:95%;
 }
-/*-webkit-transition: ease-out 0.8s;
-	-moz-transistion: ease-out 0.8s;
-	transition: ease-out 0.8s;*/
+/**/
