@@ -31,13 +31,15 @@ ul, li{
 	-webkit-transition: ease-out 0.8s;
 	-moz-transistion: ease-out 0.8s;
 	transition: ease-out 0.8s;
-	background-color:#24445C;
+	background-color:#5F9EA0;
 	box-shadow: black 5px 5px 5px;
 	width:140px;
 	border-radius:10px;
-	color:white;
 }
 a{
 	color:black;
 	text-decoration: none;
+}
+li{
+	vertical-align: middle;
 }
