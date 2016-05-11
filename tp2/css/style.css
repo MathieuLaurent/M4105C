@@ -21,16 +21,22 @@ ul, li{
 	margin-left: 5px;
 }
 #styleEffect{
-	-webkit-transition: ease-out 0.5s;
-	-moz-transistion: ease-out 0.5s;
-	transition: ease-out 0.5s;
+	-webkit-transition: ease-out 0.8s;
+	-moz-transistion: ease-out 0.8s;
+	transition: ease-out 0.8s;
 	width: 100px;
 }
 #styleEffect:hover{
-	-webkit-transition: ease-out 0.5s;
-	-moz-transistion: ease-out 0.5s;
-	transition: ease-out 0.5s;
-	background-color:#1D4851;
+	-webkit-transition: ease-out 0.8s;
+	-moz-transistion: ease-out 0.8s;
+	transition: ease-out 0.8s;
+	background-color:#24445C;
 	box-shadow: black 5px 5px 5px;
 	width:140px;
+	border-radius:10px;
+	text-align: center;
+}
+a{
+	color:black;
+	text-decoration: none;
 }
