@@ -7,6 +7,6 @@ header{
 	background-image:linear-gradient(#EFEFEF,#9E9E9E);
 	list-style: none;
 }
-ul{
+ul, li{
 	display: inline-block;
 }
