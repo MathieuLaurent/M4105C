@@ -20,3 +20,17 @@ ul, li{
 	margin-top: 5px;
 	margin-left: 5px;
 }
+#styleEffect{
+	-webkit-transition: ease-out 0.5s;
+	-moz-transistion: ease-out 0.5s;
+	transition: ease-out 0.5s;
+	width: 100px;
+}
+#styleEffect:hover{
+	-webkit-transition: ease-out 0.5s;
+	-moz-transistion: ease-out 0.5s;
+	transition: ease-out 0.5s;
+	background-color:#1D4851;
+	box-shadow: black 5px 5px 5px;
+	width:140px;
+}
