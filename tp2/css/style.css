@@ -6,6 +6,9 @@ html{
 	width:100px;
 	height: 50px;
 }
+h1{
+	font-family: comic sans ms;
+}
 
 #cssmenu,
 #cssmenu ul,
@@ -22,6 +25,8 @@ html{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+    border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; 
 }
 #cssmenu {
   width: auto;
@@ -89,7 +94,6 @@ html{
 }
 .ban h1{
 	padding-top: 50px;
-	font-family: comic sans ms;
 	-webkit-transition: ease-in 0.8s;
 	-moz-transition:ease-in 0.8s;
 	transition:0.8s;
@@ -105,8 +109,15 @@ html{
 td{
 	text-align: center;
 }
-#resize{
+#tableDesc th, #tableDesc td, #tableDesc img{
 	max-width:25%;
+}
+#tableDes th,#tableDesc td{
+	border-right: 1px solid black;
+}
+#tableDesc th:last-child,
+#tableDesc td:last-child{
+	border:none;
 }
 table{
 	width: 100%;
