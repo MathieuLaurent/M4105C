@@ -2,69 +2,143 @@ html{
 	background-color: #696969
 }
 
-header{
-	position: fixed;
-	border: 1px solid black;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	background-image:linear-gradient(#EFEFEF,#9E9E9E);
-	list-style: none;
-	width:100%;
-	line-height: 50px;
+#logo{
+	width:100px;
 	height: 50px;
 }
-ul, li{
-	display: inline-block;
-	float: right;
-	margin-right: 10px;
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  float:right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  width: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+#cssmenu.align-right ul li {
+  float: right;
+  border-right: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.22);
+}
+#cssmenu.align-right ul li a {
+  border-right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+#cssmenu ul {
+  background: #222222;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: -webkit-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: -o-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: -ms-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+  background: linear-gradient(to top, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu ul li {
+  float: left;
+  display: block;
+  border-right: 1px solid rgba(0, 0, 0, 0.22);
+  z-index: 1;
+}
+#cssmenu ul li::after {
+  content: "";
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  border-top-left-radius: 50% 4px;
+  border-top-right-radius: 50% 4px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+  bottom: 10px;
+}
+#cssmenu ul li a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 3;
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active a {
+  color: #ffffff;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+  background: #1275ae;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: -webkit-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: -o-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: -ms-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+  background: linear-gradient(to top, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
+}
+#cssmenu ul li:hover::after,
+#cssmenu ul li.active::after {
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+#cssmenu input{
+	height: 100%;
 }
 
-#logoLi{
-	width: 100px;
-	height: 40px;
-	margin-top: 5px;
-	margin-left: 5px;
+.ban{
+	background: url(../img/banniere.jpg) no-repeat;
+	background-size: cover;
+	height: 150px;
 }
-#styleEffect{
-	-moz-transition: all 1s ease;
-	-webkit-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-	width: 100px;
-	text-align: center;
+.ban h1{
+	padding-top: 50px;
+	font-family: comic sans ms;
+	-webkit-transition: ease-in 0.8s;
+	-moz-transition:ease-in 0.8s;
+	transition:0.8s;
 }
-#styleEffect:hover{
-	-moz-transform: scale(1) rotate(360deg) translate(10px);
-	-webkit-transform: scale(1) rotate(360deg) translate(10px);
-	-o-transform: scale(1) rotate(360deg) translate(10px);
-	transform: scale(1) rotate(360deg) translate(10px);
-	z-index: 1000;
-	background-color:#5F9EA0;
-	box-shadow: black 5px 5px 5px;
-	width:140px;
-	border-radius:50px;
+.ban h1:hover{
+	font-size: 30pt;
+	-webkit-transition: ease-in 0.8s;
+	-moz-transition:ease-in 0.8s;
+	transition:0.8s;
+	color:white;
 }
-a{
-	color:black;
-	text-decoration: none;
 
-}
-li{
-	margin-top: -10px;
-}
-#marginLi{
-	margin-left: 10px;
-}
-#titre{
-	font-weight: bold;
-	font-size: 1.2rem;
-	margin-left:250px;
-}
 td{
 	text-align: center;
 }
 #resize{
-	width:100%;
+	max-width:25%;
 }
 table{
 	width: 100%;
@@ -75,4 +149,16 @@ table{
 #tableForm input{
 	width:95%;
 }
-/**/
+#right{
+	float:right;
+}
+#bouton{
+	width: 100px !important;
+}
+.in {	margin:auto;
+		width:100%;		
+		border: 1px solid black;
+		background-image:linear-gradient(#98d2f4,#0b4669);
+		border-radius: 5px;
+		margin-top: 20px;
+	}

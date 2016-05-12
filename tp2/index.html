@@ -8,34 +8,35 @@
  <link rel="icon" type="image/png" href="img/flavicon.jpg" />
  <link rel="stylesheet" media="screen and (max-width:340px)" href="css/mobile.css" type="text/css"/>
  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+ <script type="text/javascript" src="js/script.js"></script>
  <script type="text/javascript"src="js/jquery.js"></script>
 </head>
-
-<header>
-<img src="img/logo-iut.jpg" id="logoLi">
-<span id="titre"> PROJET TP2 </span>
-	<ul class="menu">
-		<li id="marginLi"><input type="search" name="recherche" placeholder="rechercher"/></li>
-		<li id="styleEffect"><a href="#">Contact</a></li>
-		<li id="styleEffect"><a href="#">Titre 1</a></li>
-		<li id="styleEffect"><a href="#">Accueil</a></li>
-	</ul>
-</header>
+<img src="img/logo-iut.jpg" id="logo"/>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Accueil</span></a></li>
+   <li><a href='Titre1.html'><span>Titre 1</span></a></li>
+   <li><a href='#'><span>Contact</span></a></li>
+   <li class='last'><input type="search" name="search" placeholder="rechercher.."/></li>
+</ul>
+</div>
 <body>
 <div class="ban">
-<img src="img/banniere.jpg" width="100%">
+<center><h1> Projet Dev Web</h1></center>
 </div>
-<h1> Site responsive design! </h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies turpis ornare, tincidunt nisi dictum, sollicitudin lectus. Aenean sed ornare ipsum. Donec mattis lacinia lorem quis congue. Donec auctor dui urna, id dictum magna maximus eleifend. Ut varius nunc vel interdum bibendum. Integer pulvinar urna non tortor bibendum, quis gravida nulla commodo. Etiam sit amet orci venenatis magna mattis molestie. In porta sed nisl sit amet ornare. Nam quis aliquam ipsum, vel lobortis magna. Nunc faucibus dictum augue, sit amet laoreet sem suscipit sit amet. Donec tempus, tortor eget laoreet volutpat, est arcu pulvinar sem, eu hendrerit erat tortor non eros. Cras euismod urna a enim aliquam, id ornare dolor pretium. Nunc libero mi, fermentum et neque et, tristique vestibulum risus.
-</p>
-<div>
+<div class="in">
+	<h1> Site responsive design! </h1>
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies turpis ornare, tincidunt nisi dictum, sollicitudin lectus. Aenean sed ornare ipsum. Donec mattis lacinia lorem quis congue. Donec auctor dui urna, id dictum magna maximus eleifend. Ut varius nunc vel interdum bibendum. Integer pulvinar urna non tortor bibendum, quis gravida nulla commodo. Etiam sit amet orci venenatis magna mattis molestie. In porta sed nisl sit amet ornare. Nam quis aliquam ipsum, vel lobortis magna. Nunc faucibus dictum augue, sit amet laoreet sem suscipit sit amet. Donec tempus, tortor eget laoreet volutpat, est arcu pulvinar sem, eu hendrerit erat tortor non eros. Cras euismod urna a enim aliquam, id ornare 	dolor pretium. Nunc libero mi, fermentum et neque et, tristique vestibulum risus.
+	</p>
+</div>
+<div class="in">
 	<table>
 		<tr>
-			<th><img src="img/calais.jpg" id="resize"></th>
-			<th><img src="img/calais.jpg" id="resize"></th>
-			<th><img src="img/calais.jpg" id="resize"></th>
-			<th><img src="img/calais.jpg" id="resize"></th>
+			<th><img src="img/codeInf.jpg" id="resize"></th>
+			<th><img src="img/depannage.jpg" id="resize"></th>
+			<th><img src="img/connexionMonde.jpg" id="resize"></th>
+			<th><img src="img/informatique3.jpg" id="resize"></th>
 		</tr>
 		<tr>
 			<td>Calais</td>
@@ -51,7 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies turpis or
 		</tr>
 	</table>
 </div>
-<div>
+<div class="in">
 	<table id="tableFooter">
 		<tr>
 			<th> Titre 1 </th>
@@ -79,38 +80,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies turpis or
 						<tr>
 							<td colspan="2"><input type="textarea" name="message" placeholder="message"/></td>
 						</tr>
+						<tr>
+							<td colspan="2"><input type="submit" name="envoyer" value="envoyer" id="bouton"/></td>
+						</tr>
 					</table>
 				</form>
 			</td>
 		</tr>
 	</table>
 </div>
+<hr>
+<p id="right">Laurent Mathieu Groupe IPI</p>
 
 </body>
-
-<script>
-function initialize() {
-  map = new google.maps.Map(document.getElementById("map_canvas"), {
-        zoom: 19,
-        center: new google.maps.LatLng(48.858565, 2.347198),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      });   
-} 
- 
-if (navigator.geolocation)
-  var watchId = navigator.geolocation.watchPosition(successCallback,
-                            null,
-                            {enableHighAccuracy:true});
-else
-  alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");    
- 
-function successCallback(position){
-  map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-  var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude), 
-    map: map
-  }); 
-}
-
-</script>
 </html>
