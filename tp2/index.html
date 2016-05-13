@@ -59,7 +59,11 @@
 			<th> Titre 2 </th>
 		</tr>
 		<tr>
-			<td width="50%"><input type="button" onclick="javascript:initialize()" name="geolocalisation" value="geolocalisation"/></td>
+			<td width="50%">
+				<div id="map_canvas"  onload="initialize()">
+					<input type="button" onclick="javascript:initialize()" name="geolocalisation" value="geolocalisation"/>
+				</div>
+			</td>
 			<td style="width:50%; border-left:1px solid black;">
 				<form>
 					<table id="tableForm">
