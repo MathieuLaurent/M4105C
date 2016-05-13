@@ -105,28 +105,10 @@ h1{
 	color:white;
 }
 
-td{
-	text-align: center;
+.News span{
+	width: 25%;
 }
-#tableDesc th, #tableDesc td, #tableDesc img{
-	max-width:25%;
-}
-#tableDes th,#tableDesc td{
-	border-right: 1px solid black;
-}
-#tableDesc th:last-child,
-#tableDesc td:last-child{
-	border:none;
-}
-table{
-	width: 100%;
-}
-#tableFooter th{
-	text-align: left;
-}
-#tableForm input{
-	width:95%;
-}
+
 #right{
 	float:right;
 }
