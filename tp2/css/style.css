@@ -81,6 +81,9 @@ h1{
   background: -ms-linear-gradient(bottom, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
   background: linear-gradient(to top, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
 }
+#cssmenu ul li:last-child:hover{
+	background: transparent;
+}
 #cssmenu input{
 	height: 100%;
 	margin-top: 5px;
@@ -105,8 +108,17 @@ h1{
 	color:white;
 }
 
-.News span{
-	width: 25%;
+#News div{
+	width: 24.5%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+#News img{
+	width:160px;
+	height:100px;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 #right{
