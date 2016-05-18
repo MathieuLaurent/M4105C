@@ -176,4 +176,47 @@ h1{
   width: 100%;
   text-align: top;
 }
+#tel img{
+  width:30px;
+  height:30px;
+  display: none;
+}
 
+
+@media only screen and (max-device-width:800px){
+  #logo{
+    margin-left:40%;
+    margin-right:40%;
+  }
+  #cssmenu ul li a{
+    width: 100%;
+  }
+  #cssmenu li{
+    width:25%;
+  }
+  #cssmenu a{
+    font-size: 10px;
+  }
+  #cssmenu input{
+    width:100%;
+  }
+  #News div{
+    width: 49%;
+  }
+}
+
+@media only screen and (max-device-width:480px){
+  #cssmenu ul{
+    display: none;
+  }
+  #News div{
+    width:95% !important;
+  }
+  #map, #form{
+    width: 98%;
+  }
+  #tel img{
+    display: block;
+    margin-top: -50px;
+  }
+}
