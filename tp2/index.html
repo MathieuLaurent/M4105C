@@ -20,7 +20,7 @@
    <li><input type="search" name="search" placeholder="rechercher.."/></li>
 </ul>
 </div>
-<body>
+<body onload="initialize()">
 <div class="ban">
 <center><h1> Projet Dev Web</h1></center>
 </div>
@@ -54,13 +54,12 @@
 	</div>
 </div>
 <div class="in" id="Formulaire">
-	<div>
+	<div id="map">
 		<h1>Titre 1</h1>
-		<div id="map_canvas"  onload="initialize()">
-			<input type="button" onclick="javascript:initialize()" name="geolocalisation" value="geolocalisation"/>
+		<div id="map_canvas">
 		</div>
 	</div>
-	<div>
+	<div id="form">
 		<h1>Titre 2</h1>
 		<form>
 			<input type="text" name="prenom" placeholder="Prenom" id="midleft"/>
@@ -69,7 +68,7 @@
 			<input type="text" name="ville" placeholder="Ville de naissance" id="midright"/>
 			<input type="email" name="mail" placeholder="Adresse email" id="full"/>
 			<input type="file" name"photo" placeholder="photo" id="full"/>
-			<input type="textarea" name="message" placeholder="message" id="form-control"/>
+			<textarea name="message" placeholder="message" id="form-control"></textarea>
 			<input type="submit" name="envoyer" value="envoyer" id="bouton"/>
 		</form>
 	</div>
