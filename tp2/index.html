@@ -31,44 +31,48 @@
 	</p>
 </div>
 <div class="in" id="News">
-	<div class="News1">
+	<div>
 		<img src="img/test.jpg">
 		<h1>Ordinateurs</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies turpis ornare, tincidunt nisi dictum, sollicitudin lectus. Aenean sed ornare ipsum. Donec mattis lacinia lorem quis congue.</p>
 	</div>
-	<div class="News2">
+	<div>
 		<img src="img/depannage.jpg">
 		<h1>Infrastructure</h1>
 		<p>Donec auctor dui urna, id dictum magna maximus eleifend. Ut varius nunc vel interdum bibendum. Integer pulvinar urna non tortor bibendum, quis gravida nulla commodo.</p>
 	</div>
-	<div class="News3">
+	<div>
 		<img src="img/connexionMonde.jpg">
 		<h1>Réseaux</h1>
 		<p>Etiam sit amet orci venenatis magna mattis molestie. In porta sed nisl sit amet ornare. Nam quis aliquam ipsum, vel lobortis magna.
 		Nunc faucibus dictum augue, sit amet laoreet sem suscipit sit amet.</p>
 	</div>
-	<div class="News4">
+	<div>
 		<img src="img/informatique3.jpg">
 		<h1>Programmation</h1>
 		<p>Donec tempus, tortor eget laoreet volutpat, est arcu pulvinar sem, eu hendrerit erat tortor non eros. Cras euismod urna a enim aliquam, id ornare dolor pretium. Nunc libero mi, fermentum et neque et, tristique vestibulum risus.</p>
 	</div>
 </div>
 <div class="in" id="Formulaire">
-	Titre 1
-	Titre 2
-	<div id="map_canvas"  onload="initialize()">
-		<input type="button" onclick="javascript:initialize()" name="geolocalisation" value="geolocalisation"/>
+	<div>
+		<h1>Titre 1</h1>
+		<div id="map_canvas"  onload="initialize()">
+			<input type="button" onclick="javascript:initialize()" name="geolocalisation" value="geolocalisation"/>
+		</div>
 	</div>
-	<form>
-		<input type="text" name="prenom" placeholder="Prenom"/>
-		<input type="text" name="nom" placeholder="Nom"/>
-		<input type="date" name="date" placeholder="Date de naissance"/>
-		<input type="text" name="ville" placeholder="Ville de naissance"/>
-		<input type="email" name="mail" placeholder="Adresse email"/>
-		<input type="url" name"photo" placeholder="photo"/>
-		<input type="textarea" name="message" placeholder="message"/>
-		<input type="submit" name="envoyer" value="envoyer" id="bouton"/>
-	</form>
+	<div>
+		<h1>Titre 2</h1>
+		<form>
+			<input type="text" name="prenom" placeholder="Prenom" id="midleft"/>
+			<input type="text" name="nom" placeholder="Nom" id="midright"/>
+			<input type="date" name="date" placeholder="Date de naissance" id="midleft"/>
+			<input type="text" name="ville" placeholder="Ville de naissance" id="midright"/>
+			<input type="email" name="mail" placeholder="Adresse email" id="full"/>
+			<input type="file" name"photo" placeholder="photo" id="full"/>
+			<input type="textarea" name="message" placeholder="message" id="form-control"/>
+			<input type="submit" name="envoyer" value="envoyer" id="bouton"/>
+		</form>
+	</div>
 </div>
 <hr>
 <p id="right">Laurent Mathieu Groupe IPI</p>
