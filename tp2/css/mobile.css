@@ -1,14 +1,16 @@
-
-@media query(max-width: 340px){
+@media query(max-device-width: 480px){
   #logo{
     float: center;
     width:100%;
     height: 50px;
   }
   #News div{
-    width: 50%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
+  }
+  #map,#form{
+    width: 100%;
   }
 }
