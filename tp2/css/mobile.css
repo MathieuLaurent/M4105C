@@ -1,0 +1,14 @@
+
+@media query(max-width: 340px){
+  #logo{
+    float: center;
+    width:100%;
+    height: 50px;
+  }
+  #News div{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+}
