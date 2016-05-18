@@ -134,7 +134,9 @@ h1{
 		border-radius: 5px;
 		margin-top: 20px;
 	}
-
+#Formulaire{
+  padding-bottom: 10px;
+}
 #Formulaire div{
   display: inline-block;
   vertical-align: top;
