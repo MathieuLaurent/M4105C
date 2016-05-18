@@ -167,9 +167,9 @@ h1{
 }
 
 
-@media query{
+@media query(max-width: 340px){
   #News div{
-  width: 49.5%;
+  width: 50%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
