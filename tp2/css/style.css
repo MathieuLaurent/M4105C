@@ -186,7 +186,7 @@ h1{
 @media only screen and (max-device-width:800px){
   #logo{
     margin-left:40%;
-    margin-right:40%;
+    margin-right:30%;
   }
   #cssmenu ul li a{
     width: 100%;
